@@ -1,0 +1,68 @@
+/* assets/css/theme.css  (load AFTER Bootstrap) */
+
+/* ===== UCLA palette ===== */
+:root{
+  --ucla-blue:    #2774AE;   /* primary blue */
+  --ucla-gold:    #FFD100;
+  --ucla-dk-blue: #003B5C;   /* dark UCLA blue */
+
+  /* Bootstrap vars */
+  --bs-primary: var(--ucla-dk-blue);
+  --bs-link-color: var(--ucla-dk-blue);
+  --bs-link-hover-color: #002e4a;
+  --bs-border-color: #e5e7eb;
+}
+
+/* ===== Navbar ===== */
+.navbar-dark{ background-color: var(--ucla-blue) !important; }
+
+/* ===== Buttons ===== */
+/* primary (e.g., Publications button if .btn-primary) */
+.btn-primary{
+  background-color: var(--ucla-dk-blue) !important;
+  border-color: var(--ucla-dk-blue) !important;
+}
+.btn-primary:hover,
+.btn-primary:focus{
+  background-color: #002e4a !important;
+  border-color: #002e4a !important;
+}
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle{
+  background-color: #00243a !important;
+  border-color: #00243a !important;
+}
+
+/* outline-secondary — restyle to UCLA blue */
+.btn-outline-secondary{
+  color: var(--ucla-dk-blue) !important;
+  border-color: var(--ucla-dk-blue) !important;
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus{
+  background-color: var(--ucla-dk-blue) !important;
+  color:#fff !important;
+  border-color: var(--ucla-dk-blue) !important;
+}
+
+/* ===== Links ===== */
+a{ color: var(--ucla-dk-blue); }
+a:hover{ color: #002e4a; }
+
+/* ===== Teaching cards left rule ===== */
+.teach-card{ border-left: 4px solid var(--ucla-dk-blue) !important; }
+
+/* ===== Card links / subtle borders ===== */
+.card-link{ border-color: var(--bs-border-color); }
+.card-link:hover{ border-color: var(--ucla-dk-blue); }
+
+/* ===== Horizontal rules (if any) ===== */
+hr{ border-color: var(--bs-border-color); }
+
+/* ===== “New” pill (UCLA gold) ===== */
+.new-pill{
+  display:inline-block; padding:.15rem .5rem; font-size:.75rem;
+  background: var(--ucla-gold); color:#16222b; border-radius:.5rem;
+  border:1px solid rgba(0,0,0,.08);
+}
