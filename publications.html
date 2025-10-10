@@ -8,7 +8,8 @@
   <link href="assets/css/theme.css" rel="stylesheet">
   <style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
-    .wrap{max-width:980px;margin:auto;}
+    .wrap{max-width:980px;margin:auto; padding:0 1rem;} 
+    @media (min-width:768px){ .wrap{padding:0 1.5rem;} }
     .pub-list{
       counter-reset: trnum 11; /* set to (#latest + 1) */
     }
@@ -62,6 +63,7 @@
             <p class="tr-title">Interaction Testing in Variation Analysis</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/dplecko/ia-testing" class="btn btn-outline-secondary btn-mini">Code</a>
             </div>
           </div>
           <p class="tr-meta">
@@ -76,6 +78,7 @@
             <p class="tr-title">Sensitivity Analysis for Causal Effects under Imperfectly Observed Binary Confounding</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/dplecko/binsense" class="btn btn-outline-secondary btn-mini">R-pkg</a>
             </div>
           </div>
           <p class="tr-meta">
@@ -90,6 +93,7 @@
             <p class="tr-title">Differential Impact of Sex and Age on the Obesity Paradox</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/dplecko/obesity-paradox" class="btn btn-outline-secondary btn-mini">Code</a>
             </div>
           </div>
           <p class="tr-meta">
@@ -106,6 +110,9 @@
             <p class="tr-title">Epidemiology of Large Language Models</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/dplecko/llm-epidemia" class="btn btn-outline-secondary btn-mini">Code</a>
+              <a href="https://llm-observatory.org/" class="btn btn-outline-secondary btn-mini">Web</a>
+              <a href="https://huggingface.co/llm-observatory" class="btn btn-outline-secondary btn-mini">HuggingFace</a>
             </div>
           </div>
           <p class="tr-meta">
@@ -134,6 +141,7 @@
             <p class="tr-title">An Algorithmic Approach for Causal Health Equity: A Look at Race Differentials in ICU Outcomes</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/dplecko/RaceMortalityICU" class="btn btn-outline-secondary btn-mini">Code</a>
             </div>
           </div>
           <p class="tr-meta">
@@ -148,6 +156,7 @@
             <p class="tr-title">Beyond the Back-door: Probabilities of Identification</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/dplecko/pid" class="btn btn-outline-secondary btn-mini">Code</a>
             </div>
           </div>
           <p class="tr-meta">
@@ -163,6 +172,7 @@
             <p class="tr-title">A Framework and Analytical Exploration for a Data-driven Update of the SOFA Score in Sepsis</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/eth-mds/dose" class="btn btn-outline-secondary btn-mini">Code</a>
             </div>
           </div>
           <p class="tr-meta">
@@ -178,6 +188,7 @@
             <p class="tr-title">Counterfactual Identification under Monotonicity Constraints</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/dplecko/CFA" class="btn btn-outline-secondary btn-mini">Code</a>
             </div>
           </div>
           <p class="tr-meta">
@@ -192,6 +203,7 @@
             <p class="tr-title">Fairness–Accuracy Trade-offs: A Causal Perspective</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/dplecko/causal-acc-decomp" class="btn btn-outline-secondary btn-mini">Code</a>
             </div>
           </div>
           <p class="tr-meta">
@@ -200,12 +212,14 @@
         </div>
       </div>
       
+      <!-- Mind the Gap -->
       <div class="tr-row">
         <div class="tr-body">
           <div class="tr-title-row">
             <p class="tr-title">Mind the Gap: A Causal Perspective on Bias Amplification in Prediction &amp; Decision-Making</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/dplecko/mind-the-gap" class="btn btn-outline-secondary btn-mini">Code</a>
             </div>
           </div>
           <p class="tr-meta">Plečko, D.; Bareinboim, E. — <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2024</p>
@@ -219,6 +233,7 @@
             <p class="tr-title">Causal Fairness Analysis</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/dplecko/CFA" class="btn btn-outline-secondary btn-mini">R-pkg</a>
             </div>
           </div>
           <p class="tr-meta">
@@ -235,6 +250,7 @@
             <p class="tr-title">Reconciling Predictive and Statistical Parity: A Causal Approach</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/dplecko/sp-to-pp" class="btn btn-outline-secondary btn-mini">Code</a>
             </div>
           </div>
           <p class="tr-meta">Plečko, D.; Bareinboim, E. — <em>AAAI Conference on Artificial Intelligence</em>, 2024</p>
@@ -248,6 +264,7 @@
             <p class="tr-title">A Causal Framework for Decomposing Spurious Variations</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/dplecko/spurious-variations" class="btn btn-outline-secondary btn-mini">Code</a>
             </div>
           </div>
           <p class="tr-meta">Plečko, D.; Bareinboim, E. — <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2023</p>
@@ -261,6 +278,7 @@
             <p class="tr-title">Causal Fairness for Outcome Control</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/dplecko/outcome-control" class="btn btn-outline-secondary btn-mini">Code</a>
             </div>
           </div>
           <p class="tr-meta">Plečko, D.; Bareinboim, E. — <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2023</p>
@@ -274,7 +292,7 @@
             <p class="tr-title">ricu: R’s Interface to Intensive Care Data</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
-              <a href="https://github.com/eth-mds/ricu" class="btn btn-outline-secondary btn-mini">Code</a>
+              <a href="https://github.com/eth-mds/ricu" class="btn btn-outline-secondary btn-mini">R-pkg</a>
             </div>
           </div>
           <p class="tr-meta">Bennett*, N.; Plečko*, D.; et al. — <em>GigaScience</em> 12, giad041 (2023)</p>
@@ -288,6 +306,7 @@
             <p class="tr-title">Predicting Sepsis Using Deep Learning across International Sites</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/BorgwardtLab/multicenter-sepsis" class="btn btn-outline-secondary btn-mini" target="_blank" rel="noopener">Code</a>
             </div>
           </div>
           <p class="tr-meta">
@@ -304,6 +323,7 @@
             <p class="tr-title">Rapid Evaluation of Coronavirus Illness Severity (RECOILS) in Intensive Care</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/eth-mds/recoils" class="btn btn-outline-secondary btn-mini" target="_blank" rel="noopener">Code</a>
             </div>
           </div>
           <p class="tr-meta">
@@ -320,6 +340,7 @@
             <p class="tr-title">The Obesity Paradox and Hypoglycemia in Critically Ill Patients</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
+              <a href="https://github.com/eth-mds/bmi" class="btn btn-outline-secondary btn-mini" target="_blank" rel="noopener">Code</a>
             </div>
           </div>
           <p class="tr-meta">
@@ -336,7 +357,7 @@
             <p class="tr-title">fairadapt: Causal Reasoning for Fair Data Pre-processing</p>
             <div>
               <a class="btn btn-outline-secondary btn-mini pdf-link">PDF</a>
-              <a href="https://cran.r-project.org/package=fairadapt" class="btn btn-outline-secondary btn-mini">Code</a>
+              <a href="https://github.com/dplecko/fairadapt" class="btn btn-outline-secondary btn-mini" target="_blank" rel="noopener">R-pkg</a>
             </div>
           </div>
           <p class="tr-meta">Plečko, D.; Bennett, N.; Meinshausen, N. — <em>Journal of Statistical Software</em>, 110(4), 2024</p>
