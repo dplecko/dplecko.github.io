@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <link rel="stylesheet" href="../bootstrap.min.css">
+  <link rel="stylesheet" href="../all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <meta name="description" content="Causal Inference for Health Data">
+  <meta name="keywords" content="Statistics & Data Science, UCLA, Causal Inference, Health Data">
+  <meta name="author" content="Drago Plecko">
+
+  <title>CIHD 26 – Errata</title>
+</head>
+
+<script>
+(() => {
+  const KEY = "cihd_ok";
+  const H_OK = "9e64cbeba413a81d44de8c238c46266713e6f9f7d2a382fecb929e2cab5ab5ae";
+
+  async function sha256_hex(s) {
+    const b = new TextEncoder().encode(s);
+    const d = await crypto.subtle.digest("SHA-256", b);
+    return [...new Uint8Array(d)]
+      .map(x => x.toString(16).padStart(2, "0"))
+      .join("");
+  }
+
+  async function gate() {
+    if (sessionStorage.getItem(KEY) === "1") return;
+
+    const st = document.createElement("style");
+    st.textContent = "html{visibility:hidden}";
+    document.head.appendChild(st);
+
+    const pw = prompt("Enter password:");
+    if (!pw) { location.href = "/"; return; }
+
+    const h = await sha256_hex(pw);
+    if (h !== H_OK) { alert("Nope."); location.href = "/"; return; }
+
+    sessionStorage.setItem(KEY, "1");
+    st.remove();
+  }
+
+  gate();
+})();
+</script>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="/cihd26/">
+      STATS C160/260
+    </a>
+  
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/cihd26/">
+          <i class="fas fa-arrow-left"></i> Back to course
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <h2 class="mb-3">
+          <i class="fas fa-bug"></i> CIHD26 Errata
+        </h2>
+
+        <p class="text-muted">
+          Please report any errors, typos, or unclear points in the course materials.
+          Submissions are reviewed and incorporated as materials are updated.
+        </p>
+
+        <div class="mt4">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfaE_EobKyMaG-1Q35_LN4IeM5ZyOlLiRqbzCEofOzQHeEk_g/viewform?embedded=true"
+            style="width:100%; height:85vh; border:0; border-radius:.5rem;"
+            loading="lazy">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
