@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CI420 · Causal Inference Vignettes</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { margin: 0; color: #1b2635; background: #f5f7fa; }
+    main { max-width: 860px; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+    header { margin-bottom: 2rem; }
+    h1 { margin: 0 0 .4rem; font-size: clamp(2rem, 5vw, 3rem); letter-spacing: -.035em; }
+    p { color: #536274; line-height: 1.6; }
+    .eyebrow { margin: 0 0 .5rem; color: #2b658a; font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .list { display: grid; gap: .8rem; }
+    .lecture { display: grid; grid-template-columns: 4.2rem 1fr auto; align-items: center; gap: 1rem; padding: 1.1rem 1.25rem; background: white; border: 1px solid #dce4eb; border-radius: .8rem; box-shadow: 0 2px 8px #19324b0a; }
+    .number { color: #54718c; font-size: .85rem; font-weight: 700; }
+    .title { font-weight: 650; line-height: 1.35; }
+    .links { display: flex; gap: .5rem; }
+    .links a { display: inline-block; padding: .42rem .72rem; border: 1px solid #b9cad8; border-radius: .4rem; color: #145a86; font-size: .85rem; font-weight: 650; text-decoration: none; }
+    .links a:hover, .links a:focus-visible { color: white; background: #145a86; border-color: #145a86; }
+    @media (max-width: 620px) { .lecture { grid-template-columns: 3rem 1fr; } .links { grid-column: 2; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">CI420 · Causal Inference</p>
+      <h1>Lecture vignettes</h1>
+      <p>Worked examples for each lecture. Choose the R or Python version; both cover the same topic.</p>
+    </header>
+    <div class="list">
+      <div class="lecture"><span class="number">01</span><span class="title">Structural Causal Models, Data, and Causal Diagrams</span><span class="links"><a href="R/01-scms.html">R</a><a href="py/01-scms.html">Python</a></span></div>
+      <div class="lecture"><span class="number">02</span><span class="title">D-Separation and Conditional Independence</span><span class="links"><a href="R/02-dsep.html">R</a><a href="py/02-dsep.html">Python</a></span></div>
+      <div class="lecture"><span class="number">03</span><span class="title">Identification and Non-Identification</span><span class="links"><a href="R/03-id.html">R</a><a href="py/03-id.html">Python</a></span></div>
+      <div class="lecture"><span class="number">04</span><span class="title">Causal Effect Estimation: The Obesity Paradox</span><span class="links"><a href="R/04-est.html">R</a><a href="py/04-est.html">Python</a></span></div>
+      <div class="lecture"><span class="number">05</span><span class="title">Beyond Back-Door Adjustment</span><span class="links"><a href="R/05-beyond-bd.html">R</a><a href="py/05-beyond-bd.html">Python</a></span></div>
+      <div class="lecture"><span class="number">06</span><span class="title">Effects on the Treated and Natural Effects</span><span class="links"><a href="R/06-ctf.html">R</a><a href="py/06-ctf.html">Python</a></span></div>
+      <div class="lecture"><span class="number">08</span><span class="title">Effect Heterogeneity and Randomized Estimation</span><span class="links"><a href="R/08-heterogeneity.html">R</a><a href="py/08-heterogeneity.html">Python</a></span></div>
+      <div class="lecture"><span class="number">09</span><span class="title">Variation Analysis &amp; ICU Mortality</span><span class="links"><a href="R/09-variations.html">R</a><a href="py/09-variations.html">Python</a></span></div>
+      <div class="lecture"><span class="number">10</span><span class="title">Sensitivity to Unobserved Confounding</span><span class="links"><a href="R/10-sensitivity.html">R</a><a href="py/10-sensitivity.html">Python</a></span></div>
+    </div>
+  </main>
+</body>
+</html>
